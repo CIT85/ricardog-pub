@@ -1,0 +1,19 @@
+html {
+
+}
+
+body {
+
+}
+
+a {
+    color: aliceblue;
+}
+
+a:visited {
+    color: rgb(20, 40, 220);
+}
+
+a:hover, a:active {
+    color:#eee;
+}
