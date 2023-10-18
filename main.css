@@ -3,11 +3,11 @@ html {
 }
 
 body {
-
+    background-color: cadetblue;
 }
 
 a {
-    color: aliceblue;
+    color: rgb(23, 119, 36);
 }
 
 a:visited {
@@ -15,5 +15,5 @@ a:visited {
 }
 
 a:hover, a:active {
-    color:#eee;
+    color:#6e3d3d;
 }
