@@ -8,11 +8,15 @@
     <link rel="icon" href="images/dumbellicon.png">
 </head>
 <body>
+    <header><h1>My Goals</h1></header>
+    <aside>You are here!
+        <img src="images/goals-layout.png" alt="Local HTML Layout">
+    </aside>
+    <hr> 
     <hr>
-    <h1>My Goals</h1> 
-    <hr>
-
+    
     <nav>
+        <h2>Navigaton</h2>
         <ul>
             <li><a href="index.html">Back To Homepage</a></li>
 
@@ -20,42 +24,106 @@
         </ul>
     </nav>
 
-    <h2>Who is Ricardo Garcia?</h2>
-    <figure>
-        <img src="images/gymstockimg.jpg" alt="Gym stock photo" width="320" height="180" title="A pair of Dumbbells, waiting to be picked up">
-        <figcaption>
-            <em>Challenge your mind and your body.</em>
-        </figcaption>
-    </figure>
-    <p>
-        Hello, my name is Ricardo Garcia, I am 29 years old. Weight training is a huge hobby of mine, I love to challenge my mind and body. My other passions include reading Stephen King, bike riding, and attending concerts and festivals for my favorite artists. I am also a decent cook if I do say so myself! My favorite thing to cook is a well marbled Ribeye and grill it to a beautiful medium-rare. Before we talk about my future I would like to share a little about my past.
-    </p>
+    <main>
+        <h2>Who is Ricardo Garcia?</h2>
+        <figure>
+            <img src="images/gymstockimg.jpg" alt="Gym stock photo" width="320" height="180" title="A pair of Dumbbells, waiting to be picked up">
+            <figcaption>
+                <em>Challenge your mind and your body.</em>
+            </figcaption>
+        </figure>
+        <p>
+            Hello, my name is Ricardo Garcia, I am 29 years old. Weight training is a huge hobby of mine, I love to challenge my mind and body. My other passions include reading Stephen King, bike riding, and attending concerts and festivals for my favorite artists. I am also a decent cook if I do say so myself! My favorite thing to cook is a well marbled Ribeye and grill it to a beautiful medium-rare. Before we talk about my future I would like to share a little about my past.
+        </p>
 
-    <p>Almost three years ago I experienced the loss of my younger brother and it was a defining moment for me, my world was broken and I decided to put it back together into something resembling a life that would honor both his memory, and the current life that I felt like I was wasting. You see when I lost my brother I decided that I would live a life for both of us. He would have been 28 this year. I've been training my mind and body ever since, trying to reach this mountain top of my life, and when I get there I might just say his name "David", loud enough for the whole world to hear. The gym sharpened my body and taught me discipline, what I am doing here now in this class and future classes is the sharpening of my mind. Now a little bit about my future goals and aspirations.
-    </p>
+        <p>
+            Almost three years ago I experienced the loss of my younger brother and it was a defining moment for me, my world was broken and I decided to put it back together into something resembling a life that would honor both his memory, and the current life that I felt like I was wasting. You see when I lost my brother I decided that I would live a life for both of us. He would have been 28 this year. I've been training my mind and body ever since, trying to reach this mountain top of my life, and when I get there I might just say his name "David", loud enough for the whole world to hear. The gym sharpened my body and taught me discipline, what I am doing here now in this class and future classes is the sharpening of my mind. Now a little bit about my future goals and aspirations.
+        </p>
 
-    <p>I am currently pursuing an Associates Degree in Web Design but my ultimate goal is to obtain a computer science degree. For me, front end web development is my entry point into this world of coding, getting my foot in the door so to speak. I plan on transitioning to more back-end oriented work with JavaScript and then continuing to grow and transitioning as I become a more rounded and skilled dev. 
-    </p>
-    <br><br>
-    So who is Ricardo Garcia? I am a driven individual with strong will, determination and an abundance of resilience.
+        <p>
+            I am currently pursuing an Associates Degree in Web Design but my ultimate goal is to obtain a computer science degree. For me, front end web development is my entry point into this world of coding, getting my foot in the door so to speak. I plan on transitioning to more back-end oriented work with JavaScript and then continuing to grow and transitioning as I become a more rounded and skilled dev. 
+        </p>
 
-    <figure>
-        <img src="images/aftershock2023.jpg" alt="Picture of author" width="300" title="Ricardo Garcia at Aftershock Festival 2023" loading="lazy">
-        <figcaption>
-            <em>Aftershock Festival in Sacramento 2023</em>
-        </figcaption>
-    </figure>
+        <p>
+            So who is Ricardo Garcia? I am a driven individual with strong will, determination and an abundance of resilience.
+        </p>
 
-    <hr>
+        <figure>
+            <img src="images/aftershock2023.jpg" alt="Picture of author" width="300" title="Ricardo Garcia at Aftershock Festival 2023" loading="lazy">
+            <figcaption>
+                <em>Aftershock Festival in Sacramento 2023</em>
+            </figcaption>
+        </figure>
 
-        <a href="https://github.com/CIT85" target="_blank">CIT85 Main</a>
+        <section>
+            <h3>Send Me A Message</h3>
+            <form action="https://httpbin.org/get" method="get">
+                <fieldset>
+                    <legend>Contact Info</legend>
+            
+                <p>
+                    <label for="firstName">First Name:</label>
+                    <input type="text" name="firstName" id="firstName" placeholder="Ricardo" autocomplete="on" required autofocus>
+                </p>
+                <p>
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" name="lastName" id="lastName" placeholder="Garcia" autocomplete="on" required>
+                </p>
+                <p>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" name="phone" id="phone" placeholder="5555555555"
+                        pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+                </p>
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </p>
 
-        &lt;&lt;&lt; &copy; <a href="goals.html">Ricardo Garcia</a> &gt;&gt;&gt;
+                <p>
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" rows="4" required></textarea>
+                </p>
+
+                <p>
+                    <input type="submit" value="submit">
+                </p>
+                </fieldset>
+            </form>
+        </section>
+        <p>If we use httpbin as our action method in the code for the form above, we will see a range of useful information such as all of the query data. It is useful for debugging, testing and learning how these requests work. It will also display all of the data including in some cases the password submitted in a password form request as well as the form submitters IP address. </p>
+        
+    </main>
+
+    
+
+    
+
+    <footer>
+        <p>
+            <a href="https://github.com/CIT85" target="_blank">CIT85 Main</a>
+        </p>
+
+        <p><a href="learn-more.html">Learn More About Coding</a>
+        </p>
+
+        <p>
+            <a href="goals.html">My Goals</a>
+        </p>
+
+        <p>
+            &lt;&lt;&lt; &copy; <a href="goals.html">Ricardo Garcia</a> &gt;&gt;&gt;
+        </p>
+
+        <p>
+            <a href="#">Back to Top</a>
+        </p>
+    </footer>
+
+        
+
 
    
 
-    <p>
-        <a href="#">Back to Top</a>
-    </p>
+    
 </body>
 </html>
