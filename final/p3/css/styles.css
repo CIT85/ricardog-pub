@@ -1,0 +1,284 @@
+/* Reset and default styles */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #fefae0;
+    color: #283618;
+    margin: 0;
+    padding: 0;
+}
+
+header, main, footer {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+header {
+    background-color: #606c38;
+    color: #fefae0;
+    text-align: center;
+    position: relative;
+}
+
+header img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    display: block;
+    border-radius: 5px;
+    object-fit: cover;
+    
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Styling */
+
+main {
+    background-color: #283618;
+    color: #fefae0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+h2 {
+    color: #bc6c25;
+}
+
+details {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #3f5328 ;
+}
+
+/* Styling for table */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid rgba(15, 15, 15, 0.404);
+}
+
+article {
+    align-content: center;
+
+}
+
+/* Footer styling */
+
+footer {
+    background-color: #606c38;
+    color: #fefae0;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Styles for Classes */
+
+.section-container {
+    border: solid #3f5328;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px; 
+    
+    
+}
+
+.section-container img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: contain;
+
+}
+
+.table-content {
+    border-collapse: collapse;
+}
+
+.header-title {
+    color: #fefae0;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.paragraph-content {
+    line-height: 1.5;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.menu-list {
+    list-style: circle;
+    padding-left: 20px;
+}
+
+.workout-routine {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 20px;
+}
+
+.workout-routine h2, 
+.workout-routine h3, 
+.workout-routine p, 
+.workout-routine table {
+    margin-bottom: 15px;
+}
+
+/* Color Palette */
+
+.color-palette {
+    align-items: center;
+    height: 100vh;
+    justify-content: space-around;
+}
+
+.color {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: solid black;
+    margin-bottom: 25px;
+
+}
+
+.color:nth-child(2) {
+    background-color: #606c38;
+    border: solid black;
+}
+
+.color:nth-child(3) {
+    background-color: #283618;
+    border: solid black;
+}
+
+.color:nth-child(4) {
+    background-color: #fefae0;
+}
+
+.color:nth-child(5) {
+    background-color: #dda15e;
+}
+
+.color:nth-child(6) {
+    background-color: #bc6c25;
+}
+
+/* Media Query */
+
+@media (max-width: 576px) {
+    header, main, footer {
+        width: 90%;
+    }
+
+    header img, .section-container img {
+        max-height: 250px;
+        object-fit: contain;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    header, main, footer {
+        width: 80%;
+    }
+
+    header img, .section-container img {
+        max-height: 500px;
+        object-fit: contain;
+
+    }
+
+    nav ul li {
+        display: inline-block;
+        margin-right: 30px;
+    }
+
+    .workout-routine {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    header, main, footer {
+        width: 80%;
+    }
+
+    header img, .section-container img {
+        max-height: 400px;
+        object-fit: contain;
+    }
+}
+
+/* Contact Form Styling */
+
+fieldset {
+    margin-bottom: 20px;
+    border: 2px solid #dda15e;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #dda15e;
+}
+
+input[type="submit"] {
+    background-color: #fefae0;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:active {
+    background-color: #dda15e;
+}
